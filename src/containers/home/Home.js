@@ -9,7 +9,6 @@ import "firebase/auth";
 
 
 const Home = (props) => {
-  //const { authState } = useOktaAuth();
   const history = useHistory();
   
   useEffect(() => { // Similar to componentDidMount and componentDidUpdate:
@@ -31,8 +30,6 @@ const Home = (props) => {
 
     const provider = new firebase.auth.SAMLAuthProvider('saml.test-idp');
 
-    // https://cloud.google.com/identity-platform/docs/web/saml
-    // https://firebase.google.com/docs/web/setup#node.js-apps
     firebase.auth().signInWithPopup(provider) // check to see if user has auth credentials
       .then((result) => {
         console.log(result)
@@ -70,6 +67,10 @@ const Home = (props) => {
 export default Home;
 
 /* Docs
+ *
+ * Firebase Auth
+ * https://cloud.google.com/identity-platform/docs/web/saml
+ * https://firebase.google.com/docs/web/setup#node.js-apps
  *
  * Logout
  * https://developer.okta.com/docs/guides/sign-users-out/react/before-you-begin/

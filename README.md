@@ -63,6 +63,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
+followed this tutorial to deploy on gcp: https://medium.com/javascript-in-plain-english/quickly-deploy-your-react-app-on-googles-app-engine-6bb97480cc9c
+
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `yarn build` fails to minify
